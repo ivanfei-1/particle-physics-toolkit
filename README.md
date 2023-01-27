@@ -1,8 +1,8 @@
 # particle-physics-toolkit
  Dockerfile to create the particle physics simulation env.
- Based on Ubuntu 22.04 and MG5 3.4.2
+ Based on Ubuntu 22.04 and MG5 3.4.2, also includes Anaconda3.
  
-本镜像**使用 Ubuntu 22.04 作为基础镜像**。
+本镜像使用 **Ubuntu 22.04** 作为基础镜像, MadGraph 版本 3.4.2, 同时包含 Anaconda3 作为 python 环境。
 
 拉取镜像
 
