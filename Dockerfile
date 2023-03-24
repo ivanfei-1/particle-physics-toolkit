@@ -22,9 +22,7 @@ RUN cmake -DCMAKE_INSTALL_PREFIX=/opt/root /opt/root_src \
 # new stage
 FROM ubuntu:22.04
 COPY --from=builder /opt/root /opt/root
-COPY imagePackages imagePackages
 SHELL ["/bin/bash", "-c"]
-# ENV DEBIAN_FRONTEND=noninteractive
 
 # install packages
 ENV TZ=Asia/Shanghai \
@@ -136,4 +134,3 @@ RUN rm -f /root/MGInstallScript
 
 # initialize
 CMD /bin/bash
-
