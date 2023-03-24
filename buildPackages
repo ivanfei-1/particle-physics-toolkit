@@ -1,6 +1,7 @@
 cmake
 ca-certificates
 curl
+build-essential
 davix-dev
 dcap-dev
 fonts-freefont-ttf
