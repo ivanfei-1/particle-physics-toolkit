@@ -1,3 +1,4 @@
+#compile ROOT from source
 FROM ubuntu:22.04 as builder
 
 LABEL maintainer.name="Yifan Fei"
@@ -9,6 +10,7 @@ WORKDIR /opt
 
 COPY buildPackages buildPackages
 
+# download and compile ROOT
 RUN apt-get update -qq \
  && ln -sf /usr/share/zoneinfo/UTC /etc/localtime \
  && apt-get -y install $(cat buildPackages)\
