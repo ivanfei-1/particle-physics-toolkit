@@ -1,2 +1,11 @@
 
 .DS_Store
+*.pygtex
+*.aux
+*.fdb_latexmk
+*.pygstyle
+Instruction/三件套安装指南.fls
+Instruction/三件套安装指南.log
+Instruction/三件套安装指南.out
+Instruction/三件套安装指南.synctex.gz
+Instruction/三件套安装指南.xdv
