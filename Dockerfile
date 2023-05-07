@@ -74,6 +74,7 @@ libxmu-dev \
 libxpm-dev \
 libxt-dev \
 rsync \
+ghostscript \
 tcl \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
@@ -135,4 +136,4 @@ RUN ./MG*/bin/mg5_aMC MGInstallScript
 RUN rm -f /root/MGInstallScript
 
 # initialize
-CMD /bin/bash
+ENTRYPOINT service ssh restart && bash
